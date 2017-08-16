@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="css+js/bootstrap.min.css">
+    <script src="css+js/jquery-3.1.1.min.js"></script>
+    <script src="css+js/bootstrap.min.js"></script>
+    <script src="css+js/rem.js"></script>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .index{
+            width: 100%;
+            height: 4rem;
+            display: flex;
+        }
+        .top{
+            flex-grow: 1;
+            background-color: red;
+        }
+        .top>img{
+            width: 100%;
+            height: 2.9rem;
+        }
+        .top>p{
+            text-align: center;
+            font-size: 0.7rem;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="row">
+        <!-- 使用属性控制轮播 -->
+        <div class="col-md-10 col-md-offset-1">
+            <!-- data-ride="carousel":设置轮播自动开始播放 -->
+            <!-- data-interval="1000":设置轮播时间间隔；false：轮播不执行 -->
+            <!-- data-pause="hover"：(hover)鼠标移入暂停;除了hover之外都不会暂停 -->
+            <!-- data-wrap="false":设置播放一轮是否结束 -->
+            <!--  -->
+            <div id="myCarousel" class="carousel slide" data-ride="carousel"
+                 data-interval="3000"
+                 data-pause="hover"
+                 data-wrap="true">
+
+                <ol class="carousel-indicators">
+                    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                    <li data-target="#myCarousel" data-slide-to="1"></li>
+                </ol>
+                <div class="carousel-inner">
+                    <div class="item active">
+                        <div class="index">
+                            <div class="top">
+                                <img src="img/bg1.jpg" alt="">
+                                <p>孤涅</p>
+                            </div>
+                            <div class="top">
+                                <img src="img/bg1.jpg" alt="">
+                                <p>孤涅</p>
+                            </div>
+                            <div class="top">
+                                <img src="img/bg1.jpg" alt="">
+                                <p>孤涅</p>
+                            </div>
+                            <div class="top">
+                                <img src="img/bg1.jpg" alt="">
+                                <p>孤涅</p>
+                            </div>
+                        </div>
+                        <div class="index">
+                            <div class="top">
+                                <img src="img/bg1.jpg" alt="">
+                                <p>孤涅</p>
+                            </div>
+                            <div class="top">
+                                <img src="img/bg1.jpg" alt="">
+                                <p>孤涅</p>
+                            </div>
+                            <div class="top">
+                                <img src="img/bg1.jpg" alt="">
+                                <p>孤涅</p>
+                            </div>
+                            <div class="top">
+                                <img src="img/bg1.jpg" alt="">
+                                <p>孤涅</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="item">
+                            <div class="index">
+                                <div class="top">
+                                    <img src="img/bg1.jpg" alt="">
+                                    <p>孤涅</p>
+                                </div>
+                                <div class="top">
+                                    <img src="img/bg1.jpg" alt="">
+                                    <p>孤涅</p>
+                                </div>
+                                <div class="top">
+                                    <img src="img/bg1.jpg" alt="">
+                                    <p>孤涅</p>
+                                </div>
+                                <div class="top">
+                                    <img src="img/bg1.jpg" alt="">
+                                    <p>孤涅</p>
+                                </div>
+                            </div>
+                            <div class="index">
+                                <div class="top">
+                                    <img src="img/bg1.jpg" alt="">
+                                    <p>孤涅</p>
+                                </div>
+                                <div class="top">
+                                    <img src="img/bg1.jpg" alt="">
+                                    <p>孤涅</p>
+                                </div>
+                                <div class="top">
+                                    <img src="img/bg1.jpg" alt="">
+                                    <p>孤涅</p>
+                                </div>
+                                <div class="top">
+                                    <img src="img/bg1.jpg" alt="">
+                                    <p>孤涅</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <a href="#myCarousel" data-slide="prev" class="carousel-control left">
+                    <span class="glyphicon glyphicon-chevron-left"></span>
+                </a>
+                <a href="#myCarousel" data-slide="next" class="carousel-control right">
+                    <span class="glyphicon glyphicon-chevron-right"></span>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
